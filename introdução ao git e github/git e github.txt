@@ -1,0 +1,90 @@
+dir - tras lista de diretorios
+cd/-para navegar em uml ocal especifico
+cd..-retrocede um nivel
+mkdir-cria umd diretorio
+cls-limpa 
+rmdir - remove diretorio
+
+C:\workspace>echo hello >hello.txt -  criei um arquivo com texto de hello dentro do windows
+-----------------------------------------------------------------------------------------------------------------------
+SHA1- algoritimo de encripitação,eles geram um conjunto de caracteres de 40digitos
+
+objetos do GIT- 
+COMMIT - aponta uma arvore , autor , e o outro commit
+commit possuem sha1
+------------------------------------------------------------------------
+chave ssh-assinatura da nossa maquina 
+
+geração ssh- $ ssh-keygen -t ed25519 -C joaokrumposcarmo@hotmail.com
+senha:
+/c/Users/joao.krumpos/.ssh/
+
+Cat- visualiza o conteudo de uma dessaas chaves 
+pwd - mostra o caminho completo
+$ eval $(ssh-agent -s)- rodar ssh 
+$ ssh-add id_ed25519 -privado 
+
+
+
+GIT INIT- INICIA UM REPOSITORIO  NO GIT
+GIT ADD -  MOVER ARQUIVOS E VERSIONAMENTO
+GIT COMMIT - PARA DAR UM NOVO COMMIT
+ flags/-a mostra arquivos o
+CONFIGURAÇÃO INICIAL GIT-----
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git config --global user.email "joaokrumposcarmo@hotmail.com"
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git config --global user.name joao
+
+$ mv lasanha.md ./receitas/ mover de um para o outro
+
+$ git config --list - lista as configurações 
+
+
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git remote -v
+origin   (fetch)
+origin   (push)
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git config--global user.name joaokrumpos
+git: 'config--global' is not a git command. See 'git --help'.
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git remote remove origin
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git remote add origin https://github.com/JoaoKrumpos/livro_-de-receitas-.git
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git remote -v
+origin  https://github.com/JoaoKrumpos/livro_-de-receitas-.git (fetch)
+origin  https://github.com/JoaoKrumpos/livro_-de-receitas-.git (push)
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.78 KiB | 606.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JoaoKrumpos/livro_-de-receitas-.git
+ * [new branch]      master -> master
+
+joao.krumpos@LP1389 MINGW64 /c/workspace/livro-receitas (master)
+$
+
+
+
